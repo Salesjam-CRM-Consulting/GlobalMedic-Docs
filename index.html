@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Как пользоваться — Генератор КП</title>
+  <style>
+    :root {
+      --ink: #1c2b2c;
+      --muted: #5c6f70;
+      --line: #e3ecec;
+      --bg: #f3f7f7;
+      --card: #fff;
+      --accent: #0f766e;
+      --accent-soft: #e7f5f3;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font: 17px/1.55 "Segoe UI", system-ui, sans-serif;
+    }
+    a { color: var(--accent); }
+    header.top {
+      background: #0f3d3a;
+      color: #fff;
+      padding: 28px 24px 22px;
+    }
+    header.top h1 {
+      margin: 0 0 6px;
+      font-size: 32px;
+      font-weight: 750;
+      letter-spacing: -0.03em;
+    }
+    header.top p { margin: 0; color: #d5ebe8; max-width: 720px; }
+    .layout {
+      display: grid;
+      grid-template-columns: 280px minmax(0, 820px);
+      gap: 28px;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 20px 80px;
+      align-items: start;
+    }
+    nav {
+      position: sticky;
+      top: 16px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      max-height: calc(100vh - 32px);
+      overflow: auto;
+    }
+    nav a {
+      display: block;
+      text-decoration: none;
+      color: var(--ink);
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: 14.5px;
+      line-height: 1.35;
+    }
+    nav a:hover { background: var(--accent-soft); color: var(--accent); }
+    main {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 8px 36px 40px;
+    }
+    section { padding-top: 28px; border-top: 1px solid var(--line); }
+    section:first-child { border-top: 0; }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 26px;
+      letter-spacing: -0.03em;
+      scroll-margin-top: 18px;
+    }
+    h3 { margin: 22px 0 8px; font-size: 20px; }
+    h4 { margin: 18px 0 8px; font-size: 17px; }
+    p { margin: 0 0 12px; }
+    ol, ul { margin: 0 0 14px; padding-left: 1.3em; }
+    li { margin: 6px 0; }
+    li::marker { color: var(--accent); font-weight: 700; }
+    strong { font-weight: 700; }
+    figure { margin: 16px 0 20px; }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: #0e1720;
+      display: block;
+    }
+    figcaption {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 860px) {
+      .layout { grid-template-columns: 1fr; padding: 16px 12px 48px; }
+      nav { position: static; max-height: none; }
+      main { padding: 4px 16px 28px; }
+      header.top h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <h1>Как пользоваться</h1>
+    <p>Настройки контента и генератор коммерческих предложений. Куда нажать, если фото пустое, и откуда программа берёт картинки.</p>
+  </header>
+  <div class="layout">
+    <nav><a href="#start">С чего начать</a><a href="#s1">1. Собрать предложение</a><a href="#s2">2. Не та клиника, доктор или отель</a><a href="#s3">3. Фото пациента</a><a href="#s4">4. Страницы</a><a href="#s5">5. Один раз заполнили — подставить в другую квоту</a><a href="#s6">6. Цена и что входит в пакет</a><a href="#s7">7. Если в предложении пустое фото</a><a href="#s8">8. Настройки: с чего начать</a><a href="#s9">9. Пустое фото доктора</a><a href="#s10">10. Пустые фото клиники</a><a href="#s11">11. Пустые фото отеля</a><a href="#s12">12. Пустые обложки и примеры работ</a><a href="#s13">13. Откуда генератор берёт картинки</a><a href="#s14">14. После того как фото положили</a></nav>
+    <main><section id="start">
+      <h2>С чего начать</h2>
+      <p>Здесь два сайта.</p>
+<p><strong>Настройки контента</strong> — сюда кладут фото и тексты, которые потом сами попадают в предложения. Адрес: <a href="http://72.60.132.88:51004">http://72.60.132.88:51004</a></p>
+<p><strong>Генератор КП</strong> — здесь собирают коммерческое предложение и скачивают PDF. Обычно его открывают по ссылке на квоту. Сам по себе он здесь: <a href="http://72.60.132.88:51003">http://72.60.132.88:51003</a></p>
+    </section>
+<section id="s1">
+      <h2>1. Собрать предложение</h2>
+      <ol><li>Откройте ссылку на квоту.</li><li>Нажмите язык: <strong>RU</strong>, <strong>UA</strong> или <strong>ENG</strong>.</li><li>Нажмите шаблон: <strong>Dental</strong>, <strong>Пластика лица</strong> или <strong>Пластика</strong>.</li><li>Нажмите зелёную кнопку <strong>Далее</strong>.</li></ol>
+<figure><a href="images/12-generator-start.png" target="_blank" rel="noopener"><img src="images/12-generator-start.png" alt="Первый экран генератора" /></a><figcaption>Первый экран генератора</figcaption></figure>
+<p>Откроется редактор.</p>
+<figure><a href="images/15-redaktor.png" target="_blank" rel="noopener"><img src="images/15-redaktor.png" alt="Редактор: слева данные, справа превью" /></a><figcaption>Редактор: слева данные, справа превью</figcaption></figure>
+<ol><li>Слева список страниц. Нажмите нужную — она откроется и слева, и в превью справа.</li><li>Поправьте текст.</li><li>Когда сверху написано <strong>Все изменения сохранены</strong>, нажмите <strong>Скачать PDF</strong>.</li></ol>
+<p>Если сверху горит <strong>Есть несохранённые изменения</strong>, сначала нажмите <strong>Сохранить</strong>.</p>
+<p>Если имя, клиника, доктор или тексты не обновились и на экране старое — нажмите оранжевую кнопку <strong>Из CRM</strong> справа вверху. Она заново забирает данные. То, что вы уже руками поправили в этой квоте, при этом заменится на свежие данные.</p>
+<p>Значок глаза слева от <strong>Загрузить шаблон</strong> открывает предложение целиком, без полей редактора. Так удобно проверить, как страница выглядит перед PDF.</p>
+    </section>
+<section id="s2">
+      <h2>2. Не та клиника, доктор или отель</h2>
+      <p>Слева блок <strong>Данные квоты</strong>.</p>
+<figure><a href="images/20-vybor-iz-bazy.png" target="_blank" rel="noopener"><img src="images/20-vybor-iz-bazy.png" alt="Выбор клиники, доктора и отеля" /></a><figcaption>Выбор клиники, доктора и отеля</figcaption></figure>
+<ol><li>В поле <strong>Клиника (из БД)</strong>, <strong>Доктор (из БД)</strong> или <strong>Отель (из БД)</strong> начните вводить название.</li><li>Нажмите нужную строку в выпавшем списке. Имя, фото и тексты подставятся из настроек.</li><li><strong>Очистить выбор</strong> сбрасывает эти три поля.</li><li>Ниже можно поправить <strong>Название клиники</strong>, <strong>Имя доктора</strong> и <strong>Имя пациента</strong> руками, если в строке опечатка.</li><li><strong>Дата</strong> — день на обложке. Нажмите на календарь и выберите день.</li></ol>
+<p>Если после выбора на превью всё ещё старое, нажмите <strong>Из CRM</strong>.</p>
+    </section>
+<section id="s3">
+      <h2>3. Фото пациента</h2>
+      <p>Это фото только этой квоты. В настройки их класть не нужно.</p>
+<ol><li>Слева нажмите страницу <strong>Профиль пациента</strong>.</li><li>При необходимости заполните <strong>Возраст</strong>, <strong>Страна</strong> и <strong>Пол</strong>.</li><li>Ниже шесть клеток: <strong>Фото 1</strong> … <strong>Фото 6</strong>. Пустая клетка на превью справа — белый квадрат.</li><li>Нажмите <strong>Upload</strong> у нужной клетки и выберите картинку. Откроется обрезка.</li><li><strong>Кадрировать</strong> — обрезать ещё раз. <strong>Clear</strong> — убрать фото.</li></ol>
+<p>Поле со ссылкой под кнопками можно не заполнять. Достаточно <strong>Upload</strong>.</p>
+<figure><a href="images/21-foto-pacienta.png" target="_blank" rel="noopener"><img src="images/21-foto-pacienta.png" alt="Фото пациента" /></a><figcaption>Фото пациента</figcaption></figure>
+    </section>
+<section id="s4">
+      <h2>4. Страницы</h2>
+      <p>Список слева — это страницы предложения. Нажмите строку, чтобы открыть её.</p>
+<p>У страницы с замочком нет кнопок удаления. Такую страницу нельзя убрать и нельзя переставить. Это обложка, доктор, цена и остальные обязательные листы.</p>
+<p>У дополнительной страницы, например <strong>Примеры работ</strong>, справа четыре кнопки:</p>
+<ul><li>стрелка вверх — поднять страницу;</li><li>стрелка вниз — опустить;</li><li>копировать — сделать такую же страницу ещё раз;</li><li>корзина — убрать страницу. Программа спросит подтверждение.</li></ul>
+<p>Новую страницу с примером работ добавляет кнопка <strong>Добавить пример работ</strong> над списком.</p>
+    </section>
+<section id="s5">
+      <h2>5. Один раз заполнили — подставить в другую квоту</h2>
+      <p>Сверху две кнопки: <strong>В шаблон</strong> и <strong>Загрузить шаблон</strong>.</p>
+<p>Шаблон запоминается для того же типа и языка. Сохранили в Dental на русском — в квоте «Пластика» или на английском этого шаблона не будет.</p>
+<h3>Сохранить</h3>
+<ol><li>Нажмите <strong>В шаблон</strong>.</li><li>Впишите понятное <strong>Название</strong>.</li><li>Галочками оставьте страницы, которые нужно запомнить. <strong>Выбрать все</strong> отмечает все, <strong>Снять все</strong> снимает.</li><li>Нажмите <strong>Сохранить</strong>. <strong>Отмена</strong> — ничего не записывать.</li></ol>
+<figure><a href="images/25-v-shablon.png" target="_blank" rel="noopener"><img src="images/25-v-shablon.png" alt="Окно сохранения шаблона" /></a><figcaption>Окно сохранения шаблона</figcaption></figure>
+<h3>Подставить</h3>
+<ol><li>Откройте другую квоту с тем же языком и тем же шаблоном.</li><li>Нажмите <strong>Загрузить шаблон</strong>.</li><li>Нажмите сохранённое название.</li><li>В списке <strong>Как применяем</strong>:</li></ol>
+<ul><li><strong>Добавить недостающее</strong> — заполняет только пустые места, уже написанное не трогает;</li><li><strong>Заменить выбранное</strong> — подставляет поверх того, что уже есть.</li></ul>
+<ol><li>Снимите галочки со страниц, которые менять не нужно.</li><li>Нажмите <strong>Применить</strong>.</li></ol>
+<p><strong>Удалить</strong> в этом окне убирает сам шаблон. Квота при этом не удаляется. <strong>Обновить</strong> — перечитать список.</p>
+<figure><a href="images/26-zagruzit-shablon.png" target="_blank" rel="noopener"><img src="images/26-zagruzit-shablon.png" alt="Окно загрузки шаблона" /></a><figcaption>Окно загрузки шаблона</figcaption></figure>
+    </section>
+<section id="s6">
+      <h2>6. Цена и что входит в пакет</h2>
+      <h3>Стоимость</h3>
+<ol><li>Слева нажмите <strong>Стоимость лечения</strong>.</li><li>В таблице поправьте <strong>Название</strong>, <strong>Кол-во</strong>, <strong>Цена</strong> и <strong>Скидка</strong> в строке.</li><li><strong>Добавить строку</strong> — ещё одна позиция. Корзина в конце строки — убрать позицию.</li><li>Поле <strong>Скидка</strong> под таблицей — скидка на всю сумму. Ниже сами посчитаются <strong>Подытог</strong> и <strong>Итого</strong>.</li></ol>
+<figure><a href="images/22-stoimost.png" target="_blank" rel="noopener"><img src="images/22-stoimost.png" alt="Таблица стоимости" /></a><figcaption>Таблица стоимости</figcaption></figure>
+<h3>Что входит и что нет</h3>
+<ol><li>Нажмите страницу <strong>Пакет услуг</strong>.</li><li>Слева колонка <strong>Входят</strong>, справа <strong>Не входят</strong>.</li><li>Поправьте текст в строке. <strong>Добавить пункт</strong> — новая строка. Корзина — убрать строку.</li><li>Внизу <strong>Условия оплаты</strong> — как платить. Этот текст попадает на ту же страницу предложения.</li></ol>
+<figure><a href="images/23-paket-uslug.png" target="_blank" rel="noopener"><img src="images/23-paket-uslug.png" alt="Пакет услуг" /></a><figcaption>Пакет услуг</figcaption></figure>
+    </section>
+<section id="s7">
+      <h2>7. Если в предложении пустое фото</h2>
+      <p>Пустое место выглядит так: серый квадрат, надпись <strong>Фото не загружено</strong> или <strong>Фото пока не добавлены</strong>.</p>
+<p>Сначала посмотрите, чьё это фото.</p>
+<ul><li>Портрет доктора, фото клиники, фото отеля, обложки видео и примеры работ — их кладут в <strong>Настройки</strong>. Тогда они появятся во всех новых предложениях.</li><li>Фото только этой квоты (например фото пациента) — его загружают прямо в редакторе, на открытой странице слева. Кнопка называется <strong>Upload</strong>.</li></ul>
+<figure><a href="images/16-stranica-doktora.png" target="_blank" rel="noopener"><img src="images/16-stranica-doktora.png" alt="Страница «Про доктора»: слева кнопка Upload, справа превью" /></a><figcaption>Страница «Про доктора»: слева кнопка Upload, справа превью</figcaption></figure>
+<p>Дальше — куда заходить в настройках.</p>
+    </section>
+<section id="s8">
+      <h2>8. Настройки: с чего начать</h2>
+      <p>Откройте <a href="http://72.60.132.88:51004">http://72.60.132.88:51004</a></p>
+<p>На главной нажмите карточку, где не хватает фото: <strong>Доктора</strong>, <strong>Отели</strong>, <strong>Клиники</strong> или <strong>Продукты</strong>.</p>
+<p>На карточке справа кнопки <strong>RU</strong>, <strong>ENG</strong> и <strong>UA</strong>. Включите тот же язык, что в квоте, и заполните текст. Потом нажмите зелёную <strong>Сохранить</strong> вверху. Без этого в предложении останется старый или пустой текст. Фото сохраняется сразу после обрезки, для картинки отдельно жать <strong>Сохранить</strong> не нужно.</p>
+<figure><a href="images/01-nastroyki-glavnaya.png" target="_blank" rel="noopener"><img src="images/01-nastroyki-glavnaya.png" alt="Главная настроек" /></a><figcaption>Главная настроек</figcaption></figure>
+    </section>
+<section id="s9">
+      <h2>9. Пустое фото доктора</h2>
+      <ol><li>Нажмите <strong>Доктора</strong>.</li><li>Найдите имя в поиске справа.</li><li>Нажмите зелёную <strong>Открыть</strong> в этой строке.</li></ol>
+<figure><a href="images/02-spisok-doktorov.png" target="_blank" rel="noopener"><img src="images/02-spisok-doktorov.png" alt="Список докторов" /></a><figcaption>Список докторов</figcaption></figure>
+<ol><li>Слева блок <strong>Фото профиля</strong>. Если написано <strong>Фото не загружено</strong> — фото нет.</li><li>Нажмите зелёную <strong>Загрузить / заменить</strong>.</li><li>Выберите картинку на компьютере.</li></ol>
+<figure><a href="images/03-pustoe-foto-doktora.png" target="_blank" rel="noopener"><img src="images/03-pustoe-foto-doktora.png" alt="Пустое фото профиля" /></a><figcaption>Пустое фото профиля</figcaption></figure>
+<ol><li>Откроется окно <strong>Кадрирование фото доктора</strong>. Синяя рамка — это кусок, который попадёт в документ. Потяните рамку мышью, чтобы лицо было внутри. Нажмите <strong>Применить</strong>.</li><li>Если передумали — <strong>Отмена</strong>. Фото тогда не сохранится.</li></ol>
+<figure><a href="images/04-okno-obrezki.png" target="_blank" rel="noopener"><img src="images/04-okno-obrezki.png" alt="Окно обрезки" /></a><figcaption>Окно обрезки</figcaption></figure>
+<p>Кнопка <strong>Кадрировать</strong> под уже загруженным фото — обрезать заново. <strong>Удалить</strong> справа от «Фото профиля» — убрать картинку.</p>
+<h3>Фото команды под карточкой доктора</h3>
+<p>Прокрутите страницу вниз до блока <strong>Фото команды доктора</strong>.</p>
+<p>Если написано <strong>Фото пока не добавлены</strong>:</p>
+<ol><li>Нажмите <strong>Добавить фото</strong>.</li><li>Выберите одну или несколько картинок.</li><li>В окне обрезки подвиньте рамку и сохраните.</li></ol>
+<figure><a href="images/05-foto-komandy-pusto.png" target="_blank" rel="noopener"><img src="images/05-foto-komandy-pusto.png" alt="Пустой блок фото команды" /></a><figcaption>Пустой блок фото команды</figcaption></figure>
+<p>Порядок меняется перетаскиванием за полоски слева от фото. Потом нажмите <strong>Сохранить порядок</strong>.</p>
+    </section>
+<section id="s10">
+      <h2>10. Пустые фото клиники</h2>
+      <ol><li>На главной нажмите <strong>Клиники</strong>.</li><li>Нажмите <strong>Открыть</strong> у нужной клиники.</li><li>Прокрутите до блока <strong>Фото клиники</strong>.</li><li>Если написано <strong>Фото пока не добавлены</strong> — нажмите <strong>Добавить фото</strong> и обрежьте картинку так же, как у доктора.</li></ol>
+<figure><a href="images/07-pustye-foto-kliniki.png" target="_blank" rel="noopener"><img src="images/07-pustye-foto-kliniki.png" alt="Пустые фото клиники" /></a><figcaption>Пустые фото клиники</figcaption></figure>
+    </section>
+<section id="s11">
+      <h2>11. Пустые фото отеля</h2>
+      <ol><li>На главной нажмите <strong>Отели</strong>.</li><li>Нажмите <strong>Открыть</strong>.</li><li>Прокрутите до <strong>Фото отеля</strong>.</li><li>Нет ни одной картинки — <strong>Добавить фото</strong>.</li><li>Картинка есть, но не та — <strong>Заменить</strong>.</li><li>Картинка криво обрезана — <strong>Кадр</strong>.</li><li>Красная корзина — удалить это фото.</li><li><strong>Ссылка на отзывы</strong> — адрес страницы с отзывами. Вставьте его и нажмите зелёную <strong>Сохранить</strong> вверху карточки. Без этой ссылки кнопка отзывов на странице отелей в предложении серая и не нажимается. Потом в квоте нажмите <strong>Из CRM</strong>, иначе старая квота ссылку не увидит.</li></ol>
+<p>На страницу «Рекомендуемые отели» попадает не сам список фото отеля, а отель, который привязан к клинике. Как привязать — в разделе «Откуда программа берёт картинки».</p>
+<figure><a href="images/08-foto-otelya.png" target="_blank" rel="noopener"><img src="images/08-foto-otelya.png" alt="Фото отеля: добавить, заменить, кадр" /></a><figcaption>Фото отеля: добавить, заменить, кадр</figcaption></figure>
+    </section>
+<section id="s12">
+      <h2>12. Пустые обложки и примеры работ</h2>
+      <p>Это фото операции: обложки роликов и снимки «до / после». Они лежат не у доктора, а у <strong>продукта</strong>.</p>
+<ol><li>На главной нажмите <strong>Продукты</strong>.</li><li>Нажмите <strong>Открыть</strong> у нужной операции.</li></ol>
+<figure><a href="images/09-spisok-produktov.png" target="_blank" rel="noopener"><img src="images/09-spisok-produktov.png" alt="Список продуктов" /></a><figcaption>Список продуктов</figcaption></figure>
+<ol><li>Справа вверху нажмите вкладку <strong>Доктора</strong>.</li><li>У нужного врача нажмите <strong>Открыть</strong>.</li></ol>
+<figure><a href="images/13-kartochka-produkta.png" target="_blank" rel="noopener"><img src="images/13-kartochka-produkta.png" alt="Доктора внутри продукта" /></a><figcaption>Доктора внутри продукта</figcaption></figure>
+<p>Дальше три вкладки справа: <strong>YouTube</strong>, <strong>Примеры работ</strong>, <strong>Команда</strong>.</p>
+<h3>Обложки YouTube</h3>
+<p>Пустой слот — серый квадрат и текст <strong>Фото не загружено</strong>.</p>
+<ol><li>Нажмите <strong>Загрузить</strong> под этим слотом.</li><li>Выберите картинку и обрежьте её.</li><li>В поле <strong>Ссылка на видео</strong> вставьте адрес ролика и кликните мышкой в другое место — ссылка сохранится сама.</li></ol>
+<p>Заставка на странице «Наш Youtube» нажимается только если под ней есть ссылка. Фото без ссылки на странице видно, но кликнуть его нельзя: ролик не откроется. Ссылка без фото тоже не показывается.</p>
+<p>Четыре слота. На страницу попадают первые три. Четвёртая обложка на страницы предложения не попадает.</p>
+<figure><a href="images/10-youtube-pustye-sloty.png" target="_blank" rel="noopener"><img src="images/10-youtube-pustye-sloty.png" alt="Пустые слоты YouTube" /></a><figcaption>Пустые слоты YouTube</figcaption></figure>
+<p>Уже загруженное фото: <strong>Заменить</strong> — новая картинка, <strong>Кадр</strong> — обрезать заново, корзина — удалить.</p>
+<h3>Примеры работ</h3>
+<p>Фото «до / после» лежат здесь. Пока слот пустой, в предложении на этом месте будет дырка.</p>
+<h4>Примеров нет совсем</h4>
+<p>На вкладке <strong>Примеры работ</strong> написано <strong>Примеров пока нет</strong>. Списка строк нет.</p>
+<figure><a href="images/17-primerov-net.png" target="_blank" rel="noopener"><img src="images/17-primerov-net.png" alt="Примеров ещё нет" /></a><figcaption>Примеров ещё нет</figcaption></figure>
+<ol><li>Нажмите зелёную <strong>Добавить пример</strong>.</li><li>Откроется окно <strong>Новый пример работ</strong>. Выберите сетку:</li></ol>
+<ul><li><strong>1 фото</strong> — одна картинка;</li><li><strong>2 вертикальных</strong> — две картинки рядом;</li><li><strong>2 горизонтальных</strong> — две картинки одна под другой;</li><li><strong>4 фото</strong> — четыре клетки.</li></ul>
+<ol><li>Нажмите <strong>Создать</strong>. <strong>Отмена</strong> — ничего не добавлять.</li></ol>
+<figure><a href="images/18-novyy-primer.png" target="_blank" rel="noopener"><img src="images/18-novyy-primer.png" alt="Выбор сетки для нового примера" /></a><figcaption>Выбор сетки для нового примера</figcaption></figure>
+<p>После создания строка появляется, но фото внутри ещё пустые. Их нужно загрузить отдельно, сетка сама картинки не подставляет.</p>
+<h4>Пример есть, а фото пустые</h4>
+<p>В колонке <strong>Превью</strong> серый значок картинки. Это пустой слот.</p>
+<ol><li>Нажмите стрелку слева от строки. Строка раскроется.</li><li>В каждой пустой клетке написано <strong>Фото</strong>. Нажмите <strong>Загрузить</strong> и выберите картинку.</li><li>Обрежьте её и сохраните.</li><li>Заполните все клетки выбранной сетки. Одна пустая клетка — одна дырка в PDF.</li><li>Описание под фото пишется только после картинки. Пока фото нет, поле серое и там написано <strong>Сначала загрузите фото</strong>.</li></ol>
+<figure><a href="images/14-pustoy-primer.png" target="_blank" rel="noopener"><img src="images/14-pustoy-primer.png" alt="Пустой слот внутри примера" /></a><figcaption>Пустой слот внутри примера</figcaption></figure>
+<p>Дальше по желанию:</p>
+<ul><li><strong>Пункты сделанных операций</strong> — строки под фотографиями. <strong>Добавить пункт</strong>, вписать текст, кликнуть мышкой рядом. Текст сохранится сам. Красная корзина у строки убирает только этот пункт.</li><li>Красная корзина справа в строке примера удаляет пример целиком.</li><li>Полоски слева от строки — перетащите, чтобы поменять порядок примеров.</li><li>Уже загруженное фото: <strong>Заменить</strong> — новая картинка, <strong>Кадр</strong> — обрезать заново.</li></ul>
+<h4>В самой квоте страницы нет или она пустая</h4>
+<p>Откройте квоту и посмотрите список страниц слева.</p>
+<figure><a href="images/19-primer-v-kvote.png" target="_blank" rel="noopener"><img src="images/19-primer-v-kvote.png" alt="Страница «Примеры работ» в квоте" /></a><figcaption>Страница «Примеры работ» в квоте</figcaption></figure>
+<ul><li>Страницы <strong>Примеры работ</strong> нет в списке. Нажмите <strong>Добавить пример работ</strong>. Появится новая страница, клетки на ней пустые.</li><li>Страница есть. Нажмите на неё. Справа в превью смотрите, есть ли картинка. Слева серый квадрат с текстом <strong>Нажми, чтобы загрузить</strong> — нажмите на него и выберите файл. Откроется обрезка.</li><li>Поле <strong>Layout</strong> — та же сетка: <strong>1 фото</strong>, <strong>2 вертикально</strong>, <strong>2 горизонтально</strong>, <strong>4 фото</strong>. Поменяли сетку — пустые новые клетки тоже нужно заполнить.</li><li>Картинка уже стоит, но не та: <strong>Заменить</strong>. Обрезать заново: <strong>Кадрировать</strong>. Убрать: <strong>Убрать</strong>.</li><li><strong>Пункты сделанных операций</strong> внизу этой страницы. Если пунктов нет, в PDF этот блок не печатается. <strong>Добавить пункт</strong>, вписать текст.</li></ul>
+<p>При <strong>Скачать PDF</strong> может выскочить окно <strong>Есть незаполненные фото</strong>. Там написано, сколько пустых клеток осталось в примерах работ.</p>
+<ul><li><strong>Вернуться к редактированию</strong> — вернуться и доложить картинки.</li><li><strong>Скачать как есть</strong> — PDF скачается с дырками.</li></ul>
+<p>Вкладка <strong>Команда</strong> — те же шаги, что «Фото команды доктора»: <strong>Добавить фото</strong>, обрезать, при необходимости <strong>Сохранить порядок</strong>.</p>
+    </section>
+<section id="s13">
+      <h2>13. Откуда генератор берёт картинки</h2>
+      <p>PDF строится из уже сохранённой квоты. Заново скопировать фото из настроек она может в двух случаях: квоту открыли в первый раз или в редакторе нажали <strong>Из CRM</strong>. Дальше — откуда именно копируется каждая картинка.</p>
+<p>Картинка, которую загрузили прямо в квоте кнопкой <strong>Upload</strong>, остаётся только в этой квоте. В карточку врача, отеля или продукта она сама не записывается.</p>
+<h3>Портрет на странице «Про доктора»</h3>
+<p>Берётся <strong>Фото профиля</strong> из карточки врача: <strong>Настройки</strong> → <strong>Доктора</strong> → <strong>Открыть</strong>.</p>
+<h3>Страница «Наша команда»</h3>
+<p>Клеток четыре в шаблоне Dental и пять в шаблонах «Пластика» и «Пластика лица».</p>
+<ol><li>Сначала фото со вкладки <strong>Команда</strong> у этого врача внутри продукта. Путь: <strong>Продукты</strong> → операция из квоты → <strong>Доктора</strong> → <strong>Открыть</strong> → <strong>Команда</strong>.</li><li>Если в квоте несколько операций, сначала берётся по одной картинке с каждой, в том порядке, как операции стоят в квоте. Потом добираются следующие фото тех же операций.</li><li>Если клеток ещё не хватает, добирает из блока <strong>Фото команды доктора</strong> в карточке самого врача.</li><li>Если вкладка <strong>Команда</strong> у продукта уже заполнила все клетки, фото из карточки врача на эту страницу не попадают.</li></ol>
+<h3>Страница «Наш Youtube»</h3>
+<p>Из карточки врача эти обложки не берутся. Только вкладка <strong>YouTube</strong> у врача внутри продукта.</p>
+<ol><li>Сначала по одной обложке с каждой операции в квоте.</li><li>Если трёх не набралось, добирает следующие слоты тех же операций.</li><li>На страницу идут три штуки. У каждой на странице виден клик только вместе со ссылкой под фото.</li><li>Четвёртый слот на страницу не ставится.</li></ol>
+<h3>Примеры работ</h3>
+<p>Тоже только из продукта, не из карточки врача: вкладка <strong>Примеры работ</strong> у врача внутри операции.</p>
+<p>Берутся по очереди операции из квоты. Внутри операции — в том порядке, в каком примеры лежат в списке. Страниц с примерами в одной квоте не больше десяти. Пустая клетка в примере так и остаётся дыркой в PDF.</p>
+<h3>Рекомендуемые отели</h3>
+<ol><li>Отель должен быть в блоке <strong>Отели клиники</strong> у клиники этой квоты: <strong>Настройки</strong> → <strong>Клиники</strong> → <strong>Открыть</strong> → <strong>Добавить отель</strong>.</li><li>Картинка отеля — первая фотография в его карточке. Остальные фото этой странице не нужны.</li><li>Кнопка отзывов берёт поле <strong>Ссылка на отзывы</strong> из той же карточки. Поле пустое — кнопка есть, но серая.</li></ol>
+<p>Фото, загруженные в отель, но не привязанные к клинике, на эту страницу не выходят.</p>
+<h3>Фото клиники</h3>
+<p>Страница про клинику берёт фото из карточки клиники, сверху вниз, как они стоят в блоке <strong>Фото клиники</strong>.</p>
+<h3>Фото пациента</h3>
+<p>Только из этой квоты, страница <strong>Профиль пациента</strong>, кнопка <strong>Upload</strong>. В настройках такого блока нет.</p>
+    </section>
+<section id="s14">
+      <h2>14. После того как фото положили</h2>
+      <ol><li>Вернитесь в генератор и откройте квоту снова.</li><li>Откройте страницу, где фото было пустым, и посмотрите превью справа.</li><li>Если новая картинка или текст не появились — нажмите <strong>Из CRM</strong> и подождите, пока страница загрузится заново. Потом снова откройте эту страницу.</li><li>Если картинка на месте — <strong>Скачать PDF</strong>.</li></ol>
+<p>Если при скачивании вылезло окно про пустые фото в примерах работ, нажмите <strong>Вернуться к редактированию</strong>. Откройте страницу <strong>Примеры работ</strong> или вкладку с тем же названием в настройках продукта и загрузите картинку в каждый серый слот. Потом скачайте PDF ещё раз.</p>
+    </section></main>
+  </div>
+</body>
+</html>
